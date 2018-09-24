@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 //+build mage
 
 package main
@@ -8,7 +13,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/magefile/mage/mg"
+	"github.com/sniperkit/snk.fork.magefile-mage/mg"
 )
 
 // Returns a non-nil error.

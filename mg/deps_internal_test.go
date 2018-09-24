@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mg
 
 import (
@@ -19,7 +24,7 @@ func TestDepsLogging(t *testing.T) {
 
 	foo()
 
-	if strings.Count(buf.String(), "Running dependency: github.com/magefile/mage/mg.baz") != 1 {
+	if strings.Count(buf.String(), "Running dependency: github.com/sniperkit/snk.fork.magefile-mage/mg.baz") != 1 {
 		t.Fatalf("expected one baz to be logged, but got\n%s", buf)
 	}
 }

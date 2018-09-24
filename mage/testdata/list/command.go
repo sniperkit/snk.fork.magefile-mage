@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // +build mage
 
 // This is a comment on the package which should get turned into output with the
@@ -8,7 +13,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/magefile/mage/mg"
+	"github.com/sniperkit/snk.fork.magefile-mage/mg"
 )
 
 var Default = SomePig

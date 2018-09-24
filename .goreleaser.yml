@@ -1,3 +1,6 @@
+# Sniperkit-Bot
+# - Status: analyzed
+
 project_name: mage
 release:
   github:
@@ -7,7 +10,7 @@ release:
 build:
   binary: mage
   main: .
-  ldflags: -s -w -X github.com/magefile/mage/mage.timestamp={{.Date}} -X github.com/magefile/mage/mage.commitHash={{.Commit}} -X github.com/magefile/mage/mage.gitTag={{.Version}}
+  ldflags: -s -w -X github.com/sniperkit/snk.fork.magefile-mage/mage.timestamp={{.Date}} -X github.com/sniperkit/snk.fork.magefile-mage/mage.commitHash={{.Commit}} -X github.com/sniperkit/snk.fork.magefile-mage/mage.gitTag={{.Version}}
   goos:
     - darwin
     - linux

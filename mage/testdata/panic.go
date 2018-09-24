@@ -1,8 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // +build mage
 
 package main
 
-import "errors"
+import (
+	"errors"
+)
 
 // Function that panics.
 func Panics() {

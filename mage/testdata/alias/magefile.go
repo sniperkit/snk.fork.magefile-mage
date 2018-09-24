@@ -1,8 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 //+build mage
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 var Aliases = map[string]interface{}{
 	"st":   Status,

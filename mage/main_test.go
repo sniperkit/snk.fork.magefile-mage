@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mage
 
 import (
@@ -20,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/magefile/mage/mg"
+	"github.com/sniperkit/snk.fork.magefile-mage/mg"
 )
 
 const testExeEnv = "MAGE_TEST_STRING"

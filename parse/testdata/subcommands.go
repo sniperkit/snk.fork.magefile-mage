@@ -1,8 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // +build mage
 
 package main
 
-import "github.com/magefile/mage/mg"
+import (
+	"github.com/sniperkit/snk.fork.magefile-mage/mg"
+)
 
 type Build mg.Namespace
 

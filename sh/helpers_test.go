@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package sh_test
 
 import (
@@ -8,7 +13,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/magefile/mage/sh"
+	"github.com/sniperkit/snk.fork.magefile-mage/sh"
 )
 
 // compareFiles checks that two files are identical for testing purposes. That means they have the same length,

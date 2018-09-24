@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mage
 
 var mageTpl = `// +build mage
@@ -8,8 +13,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
-
-	"github.com/magefile/mage/mg" // mg contains helpful utility functions, like Deps
+	"github.com/sniperkit/snk.fork.magefile-mage/mg" // mg contains helpful utility functions, like Deps
 )
 
 // Default target to run when none is specified

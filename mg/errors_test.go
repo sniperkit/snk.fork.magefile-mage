@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mg
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestFatalExit(t *testing.T) {
 	expected := 99

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mage
 
 import (
@@ -19,9 +24,9 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/magefile/mage/mg"
-	"github.com/magefile/mage/parse"
-	"github.com/magefile/mage/sh"
+	"github.com/sniperkit/snk.fork.magefile-mage/mg"
+	"github.com/sniperkit/snk.fork.magefile-mage/parse"
+	"github.com/sniperkit/snk.fork.magefile-mage/sh"
 )
 
 // magicRebuildKey is used when hashing the output binary to ensure that we get

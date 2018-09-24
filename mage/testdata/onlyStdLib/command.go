@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // +build mage
 
 package main
@@ -6,7 +11,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/magefile/mage/mg"
+	"github.com/sniperkit/snk.fork.magefile-mage/mg"
 )
 
 var Default = SomePig

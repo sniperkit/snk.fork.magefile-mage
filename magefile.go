@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 //+build mage
 
 // This is the build script for Mage. The install target is all you really need.
@@ -15,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/magefile/mage/mg"
-	"github.com/magefile/mage/sh"
+	"github.com/sniperkit/snk.fork.magefile-mage/mg"
+	"github.com/sniperkit/snk.fork.magefile-mage/sh"
 )
 
 // Runs "go install" for mage.  This generates the version info the binary.
@@ -44,7 +49,7 @@ func Install() error {
 	// install` turns into a no-op, and `go install -a` fails on people's
 	// machines that have go installed in a non-writeable directory (such as
 	// normal OS installs in /usr/bin)
-	return sh.RunV(gocmd, "build", "-o", path, "-ldflags="+flags(), "github.com/magefile/mage")
+	return sh.RunV(gocmd, "build", "-o", path, "-ldflags="+flags(), "github.com/sniperkit/snk.fork.magefile-mage")
 }
 
 var releaseTag = regexp.MustCompile(`^v1\.[0-9]+\.[0-9]+$`)
@@ -84,7 +89,7 @@ func flags() string {
 	if tag == "" {
 		tag = "dev"
 	}
-	return fmt.Sprintf(`-X "github.com/magefile/mage/mage.timestamp=%s" -X "github.com/magefile/mage/mage.commitHash=%s" -X "github.com/magefile/mage/mage.gitTag=%s"`, timestamp, hash, tag)
+	return fmt.Sprintf(`-X "github.com/sniperkit/snk.fork.magefile-mage/mage.timestamp=%s" -X "github.com/sniperkit/snk.fork.magefile-mage/mage.commitHash=%s" -X "github.com/sniperkit/snk.fork.magefile-mage/mage.gitTag=%s"`, timestamp, hash, tag)
 }
 
 // tag returns the git tag for the current branch or "" if none.
